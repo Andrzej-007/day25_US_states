@@ -21,11 +21,15 @@ data_csv = pd.read_csv("./50_states.csv")
 list_all_states = data_csv['state'].to_list()
 answers_no = 1
 
+# data = pandas.read_csv("./50_states.csv")
+# all_states = data.state.to_list()
+# guessed_states = []
+
 while answers_no < len(list_all_states):
 
     for one_state in list_all_states:
         guess_state = screen.textinput(title=f"Guess the State{answers_no} out of {len(list_all_states)}",
-                                       prompt="what's another state's name")
+                                       prompt="what's another state's name in America")
 
         if one_state.lower() == guess_state.lower():
             print('oke doki')

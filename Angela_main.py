@@ -30,6 +30,7 @@ while len(guessed_states) < 50:
         state_data = data[data.state == answer_state]  # this is the same as: data[data["state"] == answer_state
         t.goto(int(state_data.x), int(state_data.y))  # this is the same as: int(state_date['x']
         t.write(answer_state)
+        print(f' state : {answer_state} exist ')
 
 # ssss
   # firest git hub   #
